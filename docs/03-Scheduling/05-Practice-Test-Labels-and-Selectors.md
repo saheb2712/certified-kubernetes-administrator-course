@@ -44,6 +44,8 @@ Solutions to Practice Test - Labels and Selectors
 
     ```
     kubectl get all --selector env=prod,bu=finance,tier=frontend
+                                OR
+    kubectl get pod --selector env=prod,bu=finance,tier=frontend
     ```
     </details>
 
