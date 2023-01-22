@@ -58,6 +58,8 @@ Solutions to Practice Test - Manual Scheduling
     ```
     kubectl delete -f nginx.yaml
     kubectl create -f nginx.yaml
+          OR
+    kubectl replace -f nginx.yaml --force (one single cmd will delete and create)
     ```
     </details>
 
