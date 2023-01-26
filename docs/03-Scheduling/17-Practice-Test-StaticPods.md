@@ -10,7 +10,7 @@ Solutions to the practice test - static pods
   $ kubectl get pods --all-namespaces
   ```
   ```
-  Note: From YAML we can refer the 
+  Note: From YAML we can refer the owner section--> Kind value, if its Node that means static Pod
   
   controlplane ~ ➜  kubectl get pod kube-apiserver-controlplane -n kube-system -o yaml|grep -i owner -A5
   ownerReferences:
