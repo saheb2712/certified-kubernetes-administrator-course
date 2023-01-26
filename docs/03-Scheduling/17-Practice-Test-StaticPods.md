@@ -9,6 +9,20 @@ Solutions to the practice test - static pods
   ```
   $ kubectl get pods --all-namespaces
   ```
+  ```
+  Note: From YAML we can refer the 
+  
+  controlplane ~ ➜  kubectl get pod kube-apiserver-controlplane -n kube-system -o yaml|grep -i owner -A5
+  ownerReferences:
+  - apiVersion: v1
+    controller: true
+    kind: Node
+    name: controlplane
+    uid: 640abecb-9b83-491e-b8bc-67d29f494b73
+  
+  
+  ```
+
   </details>
 
 - Which of the below components is NOT deployed as a static pod?
